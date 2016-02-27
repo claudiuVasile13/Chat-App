@@ -85,3 +85,22 @@ input:focus {
 i {
 	margin-right: 8px;
 }
+
+button {
+	width: 90%;
+	height: 40px;
+	border:none;
+	background-color: #FF4F00;
+	color: white;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+a {
+	bottom:0;
+	color: #FF4F00;
+}
+
+a:hover{
+	color: #FF4F00;
+}
