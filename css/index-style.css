@@ -1,0 +1,53 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+#users-list {
+	width: 200px;
+	position: fixed;
+	height: 100%;
+	color: #000;
+	// border: 1px solid #FF4F00;
+	box-shadow: 5px 0px 20px 0px #FF4F00;
+}
+
+#user-head {
+	width: 100%;
+	background-color: #FF4F00;
+	text-align: center;
+	border: 1px solid #FF4F00;
+	height: 90px;
+}
+
+#user-head input{
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	border-radius: none;
+	color: black;
+	margin-bottom: 10px;
+}
+
+#user-head p {
+	width: 100%;
+	margin-top: 10px;
+	height: 20px;
+	color: white;
+	font-family: Verdana;
+	letter-spacing: 2px;
+}
+
+#users-list ul {
+	list-style-type: none;
+	border: 1px solid green;
+	overflow-x: scroll;
+	overflow-y: scroll;
+	height: auto;
+}
+
