@@ -30,7 +30,7 @@ body {
 	background-color: #FF4F00;
 	text-align: center;
 	border: 1px solid #FF4F00;
-	height: 90px;
+	height: 15%;
 }
 
 #user-head input{
@@ -53,6 +53,7 @@ body {
 
 /*the list of users*/
 #users-list ul {
+	height: 83.5%;
 	list-style-type: none;
 	overflow-x: scroll;
 	overflow-y: scroll;
@@ -60,12 +61,16 @@ body {
 
 /*Chat*/
 #chat {
+	padding-left:10px;
+	padding-right:10px;
 	height: 100%;
+	/*background-color: black;*/
 }
 
 /*Rooms*/
 #rooms {
 	height: 100%;
+	box-shadow: -1px 0px 10px 0px #FF4F00;
 }
 
 #rooms-head input{
@@ -90,4 +95,81 @@ body {
 	list-style-type: none;
 	overflow-x: scroll;
 	overflow-y: scroll;
+	height: 83.5%;
 }
+
+/*Chat head design*/
+#chat-head {
+	width: 100%;
+	height: 8%;
+	padding-top: 15px;
+	text-align: center;
+	/*border: 1px solid red;*/
+	background-color: #FF4F00;
+}
+/*Username design*/
+#username {
+	height: 30px;
+	float: left;
+	text-align: center;
+	border-radius: 5px;
+	font-family: ComicSans;
+	margin-left: 10px;
+	background-color: white;
+	padding: 5px;
+	color:#FF4F00;
+}
+/*Button design*/
+#button-profile, #button-logout {
+	height: 30px;
+	border-radius: 5px;
+	float: right;
+	margin-right: 10px;
+	padding: 3px 8px 3px 8px;
+	background-color: white;
+	color:#FF4F00;
+}
+
+i{
+	margin-right: 8px;	
+}
+
+/*Button on hover*/
+#button-profile:hover, #button-logout:hover{
+	background-color:#FF7F50; 
+	color:white;
+}
+
+/*Chat body design*/
+#chat-body{
+	width: 100%;
+	height: 91.5%;
+	border:3px solid #FF4F00;
+}
+
+#chat-messages{
+	padding:10px 30px 0px 30px; 
+	height: 90%;
+	border:5px solid black;
+}
+
+#chat-messages ul{
+	list-style-type: none;
+}
+
+#chat-messages ul li img{
+	width: 40px;
+	border-radius: 5px;
+}
+
+#chat-messages ul li p{
+	background-color: #FF4F00;
+	border-radius: 5px;
+	margin-top: 5px;
+	margin-left: 50px;
+	padding: 10px;
+	width: 80%;
+	color:white; 
+}
+
+
