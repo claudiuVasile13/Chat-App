@@ -8,15 +8,24 @@ body {
 	height: 100%;
 }
 
-#users-list {
-	width: 200px;
-	position: fixed;
+.row {
 	height: 100%;
-	color: #000;
-	// border: 1px solid #FF4F00;
-	box-shadow: 5px 0px 20px 0px #FF4F00;
+	margin: 0;
+	/*padding: 5px;*/
+	border: 1px solid red;
 }
 
+/*the container of the users's list*/
+#users-list {
+	width: 200px;
+	/*position: fixed;*/
+	height: 100%;
+	color: #000;
+	box-shadow: 1px 0px 10px 0px #FF4F00;
+	padding: 0;
+}
+
+/*the head of the users list */
 #user-head {
 	width: 100%;
 	background-color: #FF4F00;
@@ -43,11 +52,21 @@ body {
 	letter-spacing: 2px;
 }
 
+/*the list of users*/
 #users-list ul {
 	list-style-type: none;
-	border: 1px solid green;
+	/*border: 1px solid green;*/
 	overflow-x: scroll;
 	overflow-y: scroll;
-	height: auto;
+}
+
+#chat {
+	border: 1px solid blue;
+	height: 100%;
+}
+
+#rooms {
+	border: 1px solid green;
+	height: 100%;
 }
 
