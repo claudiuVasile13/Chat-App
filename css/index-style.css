@@ -36,11 +36,14 @@ body {
 #user-head input{
 	width: 100%;
 	height: 30px;
-	text-align: center;
+	padding: 3px; 
 	border-radius: none;
 	color: black;
 	margin-bottom: 10px;
+	font-family: FontAwesome;
 }
+
+
 
 #user-head p {
 	width: 100%;
@@ -204,21 +207,41 @@ i{
 	height: auto;
 }
 
-#chat-body textarea {
-	margin-right: 10px;
-	border: 1px solid #1d89cf;
-	resize: none;
-	width: 100%;
+#send-area{
+	/*width: 100%;*/
 	height: 10%;
-	/*background-color: #FF4F00;*/
-	/*color: #fff;*/
-	/*border: none;*/
 }
 
-#send {
-	background-color: #fff;
-	height: 8%;
+
+#send-area textarea {
+	border: 1px solid #1d89cf;
+	border-right: none;
+	resize: none;
+	height: 100%;
 }
+
+#send-button{
+	height: 100%;
+	text-align: center;
+	padding-top: 10px;
+	border:1px solid #1d89cf;
+	border-left:none;
+	background-color: #fff;
+	color: #1d89cf;
+}
+
+#send-button i{
+	/*border: 1px solid green;*/
+	font-size: 30px;
+}
+
+#send-button:hover{
+	background-color: #1d89cf;
+	color: #fff;
+	cursor: pointer;
+}
+
+
 
 
 
