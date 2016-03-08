@@ -20,16 +20,16 @@ body {
 	/*position: fixed;*/
 	height: 100%;
 	color: #000;
-	box-shadow: 1px 0px 10px 0px #FF4F00;
+	box-shadow: 1px 0px 10px 0px #1d89cf;
 	padding: 0;
 }
 
 /*the head of the users list */
 #user-head,#rooms-head {
 	width: 100%;
-	background-color: #FF4F00;
+	background-color: #1d89cf;
 	text-align: center;
-	border: 1px solid #FF4F00;
+	border: 1px solid #1d89cf;
 	height: 15%;
 }
 
@@ -70,7 +70,7 @@ body {
 /*Rooms*/
 #rooms {
 	height: 100%;
-	box-shadow: -1px 0px 10px 0px #FF4F00;
+	box-shadow: -1px 0px 10px 0px #1d89cf;
 }
 
 #rooms-head input{
@@ -101,33 +101,43 @@ body {
 /*Chat head design*/
 #chat-head {
 	width: 100%;
-	height: 8%;
-	padding-top: 15px;
+	height: 60px;
+	padding-top: 10px;
 	text-align: center;
 	/*border: 1px solid red;*/
-	background-color: #FF4F00;
+	background-color: #1d89cf;
 }
 /*Username design*/
 #username {
-	height: 30px;
 	float: left;
-	text-align: center;
-	border-radius: 5px;
+	/*text-align: center;*/
+	/*border-radius: 5px;*/
 	font-family: ComicSans;
-	margin-left: 10px;
-	background-color: white;
-	padding: 5px;
-	color:#FF4F00;
+	margin-left: 15px;
+	font-size: 20px;
+	margin-top: 5px;
+	color: #fff;
 }
 /*Button design*/
-#button-profile, #button-logout {
-	height: 30px;
-	border-radius: 5px;
+
+#button-profile {
+	height: 40px;
+	/*border-radius: 5px;*/
 	float: right;
-	margin-right: 10px;
-	padding: 3px 8px 3px 8px;
-	background-color: white;
-	color:#FF4F00;
+	padding: 10px;
+	background-color: #fff;
+	color: #1d89cf;
+	border: 1px solid #fff;
+}
+
+#button-logout {
+	height: 40px;
+	float: right;
+	padding: 10px;
+	border: 1px solid #fff;
+	color: #fff;
+	margin-left: 15px;
+	margin-right: 15px;
 }
 
 i{
@@ -135,16 +145,26 @@ i{
 }
 
 /*Button on hover*/
-#button-profile:hover, #button-logout:hover{
-	background-color:#FF7F50; 
-	color:white;
+#button-profile:hover {
+	background-color: #1d89cf;
+	border: 1px solid #fff; 
+	color: #fff;
+	cursor: pointer;
+}
+
+#button-logout:hover {
+	border: 1px solid #fff;
+	background-color: #fff;
+	color: #1d89cf;
+	cursor: pointer;
 }
 
 /*Chat body design*/
 #chat-body{
 	width: 100%;
-	height: 91.5%;
-	border:3px solid #FF4F00;
+	height: 90%;
+	/*border: 3px solid #1d89cf*/
+	background-color: #F0F0F0;
 }
 
 #chat-messages{
@@ -158,7 +178,7 @@ i{
 	list-style-type: none;
 	/*border: 1px solid blue;*/
 	width: 100%;
-	padding:10px 30px 0px 30px; 
+	padding: 10px 30px 0px 30px; 
 }
 
 #chat-messages ul li {
@@ -172,7 +192,7 @@ i{
 }
 
 #chat-messages ul li p{
-	background-color: #FF4F00;
+	background-color: #1d89cf;
 	border-radius: 5px;
 	margin-top: 5px;
 	margin-left: 50px;
@@ -186,7 +206,7 @@ i{
 
 #chat-body textarea {
 	margin-right: 10px;
-	border: 1px solid blue;
+	border: 1px solid #1d89cf;
 	resize: none;
 	width: 100%;
 	height: 10%;
