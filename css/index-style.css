@@ -20,7 +20,7 @@ body {
 	/*position: fixed;*/
 	height: 100%;
 	color: #000;
-	box-shadow: 1px 0px 10px 0px #1d89cf;
+	/*box-shadow: 1px 0px 10px 0px #1d89cf;*/
 	padding: 0;
 }
 
@@ -43,8 +43,6 @@ body {
 	font-family: FontAwesome;
 }
 
-
-
 #user-head p {
 	width: 100%;
 	margin-top: 10px;
@@ -56,10 +54,34 @@ body {
 
 /*the list of users*/
 #users-list ul {
-	height: 83.5%;
+	height: 84%;
 	list-style-type: none;
-	overflow-x: scroll;
-	overflow-y: scroll;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: #F0F0F0;
+}
+
+#users-list ul li {
+	/*border: 1px solid red;*/
+	padding: 10px;
+	/*color: #1d89cf;*/
+	color: black;
+	/*font-weight: bold;*/
+	font-family: Arial;
+}
+
+#users-list ul li:nth-child(odd) {
+	font-style: italic;
+	color: grey;
+	background-color: rgba(255, 255, 255, 1);
+}
+
+#users-list ul li:nth-child(odd) i {
+	color: #FF4C4C;
+}
+
+#users-list ul li:nth-child(even) i {
+	color: #6B8E23;
 }
 
 /*Chat*/
@@ -203,7 +225,7 @@ i{
 	padding: 10px;
 	word-wrap: break-word;
 	/*width: 90%;*/
-	color: #1d89cf; 
+	color: #4c4c4c; 
 	/*height: auto;*/
 }
 
