@@ -4,12 +4,15 @@
 }
 
 body {
+	padding: 0;
+	margin: 0;
 	width: 100%;
 	height: 100%;
+	position: absolute;
 }
 
 .row {
-	height: 100vh;
+	height: 100%;
 	margin: 0;
 }
 
@@ -37,6 +40,7 @@ body {
 
 /*the list of users*/
 #users-list ul, #rooms ul {
+	margin: 0;
 	height: 100%;
 	list-style-type: none;
 	overflow-y: auto;
@@ -91,9 +95,9 @@ body {
 
 /*Chat*/
 
-/*#chat {
-	border: 1px solid blue;
-}*/
+#chat {
+	height: 100%;
+}
 
 /*Chat head design*/
 #chat-head {
@@ -191,14 +195,18 @@ i{
 #chat-messages ul li p{
 	background-color: #fff;
 	border-radius: 5px;
+	border: 1px solid silver;
 	margin-top: 5px;
-	margin-left: 50px;
+	margin-left: 40px;
 	margin-right: 5px;
 	padding: 10px;
 	word-wrap: break-word;
 	/*width: 90%;*/
 	color: #4c4c4c; 
 	/*height: auto;*/
+}
+
+#chat-messages ul li i {
 }
 
 #send-area{
