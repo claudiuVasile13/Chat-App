@@ -11,69 +11,51 @@ body {
 .row {
 	height: 100vh;
 	margin: 0;
-	/*padding: 5px;*/
 }
 
 /*the container of the users's list*/
 #users-list,#rooms {
-	/*width: 100%;*/
-	/*position: fixed;*/
 	height: 100%;
 	color: #000;
-	/*box-shadow: 1px 0px 10px 0px #1d89cf;*/
 	padding: 0;
+	background-color: #F0F0F0;
+	/*border: 1px solid red;*/
 }
 
-/*the head of the users list */
-#user-head,#rooms-head {
+.search {
 	width: 100%;
-	background-color: #1d89cf;
-	text-align: center;
-	border: 1px solid #1d89cf;
-	height: 15%;
-}
-
-#user-head input{
-	width: 100%;
-	height: 30px;
-	padding: 3px; 
+	padding: 10px; 
 	border-radius: none;
-	color: black;
-	margin-bottom: 10px;
+	border: none;
+	height: 60px;
+	color: #000;
+	text-align: center;
 	font-family: FontAwesome;
-}
-
-#user-head p {
-	width: 100%;
-	margin-top: 10px;
-	height: 20px;
-	color: white;
-	font-family: Verdana;
-	letter-spacing: 2px;
+	/*background-color: #1d89cf;*/
+	border-bottom: 1px solid silver;
 }
 
 /*the list of users*/
-#users-list ul {
-	height: 84%;
+#users-list ul, #rooms ul {
+	height: 100%;
 	list-style-type: none;
-	overflow-x: hidden;
 	overflow-y: auto;
-	background-color: #F0F0F0;
+	border-right: 1px solid silver;
 }
 
-#users-list ul li {
-	/*border: 1px solid red;*/
+#users-list ul li, #rooms ul li {
 	padding: 10px;
-	/*color: #1d89cf;*/
 	color: black;
-	/*font-weight: bold;*/
 	font-family: Arial;
+	overflow-x: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 #users-list ul li:nth-child(odd) {
 	font-style: italic;
 	color: grey;
-	background-color: rgba(255, 255, 255, 1);
+	background-color: #fff;
 }
 
 #users-list ul li:nth-child(odd) i {
@@ -89,39 +71,29 @@ body {
 	padding-left:10px;
 	padding-right:10px;
 	height: 100%;
-	/*background-color: black;*/
 }
 
 /*Rooms*/
-#rooms {
-	height: 100%;
-	box-shadow: -1px 0px 10px 0px #1d89cf;
-}
-
-#rooms-head input{
-	width: 100%;
-	height: 30px;
-	text-align: center;
-	border-radius: none;
-	color: black;
-	margin-bottom: 10px;
-}
-
-#rooms-head p {
-	width: 100%;
-	margin-top: 10px;
-	height: 20px;
-	color: white;
-	font-family: Verdana;
-	letter-spacing: 2px;
-}
 
 #rooms ul {
-	list-style-type: none;
-	overflow-x: scroll;
-	overflow-y: scroll;
-	height: 83.5%;
+	border-left: 1px solid silver;
+	border-right: none;
 }
+
+#rooms ul li:nth-child(odd) {
+	background-color: #fff;
+}
+
+#rooms ul li i {
+	color: #1d89cf;
+}
+
+
+/*Chat*/
+
+/*#chat {
+	border: 1px solid blue;
+}*/
 
 /*Chat head design*/
 #chat-head {
@@ -196,7 +168,7 @@ i{
 	/*padding:10px 30px 0px 30px; */
 	height: 90%;
 	/*border:5px solid black;*/
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 #chat-messages ul{
