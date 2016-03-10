@@ -17,7 +17,7 @@ body {
 }
 
 /*the container of the users's list*/
-#users-list,#rooms {
+#users-list,#rooms-list {
 	height: 100%;
 	color: #000;
 	padding: 0;
@@ -39,15 +39,15 @@ body {
 }
 
 /*the list of users*/
-#users-list ul, #rooms ul {
+#users, #rooms {
 	margin: 0;
 	height: 100%;
 	list-style-type: none;
-	overflow-y: auto;
+	overflow-y: hidden;
 	border-right: 1px solid silver;
 }
 
-#users-list ul li, #rooms ul li {
+#users li, #rooms li {
 	padding: 10px;
 	color: black;
 	font-family: Arial;
@@ -56,17 +56,17 @@ body {
 	text-overflow: ellipsis;
 }
 
-#users-list ul li:nth-child(odd) {
+#users li:nth-child(odd) {
 	font-style: italic;
 	color: grey;
 	background-color: #fff;
 }
 
-#users-list ul li:nth-child(odd) i {
+#users li:nth-child(odd) i {
 	color: #FF4C4C;
 }
 
-#users-list ul li:nth-child(even) i {
+#users li:nth-child(even) i {
 	color: #6B8E23;
 }
 
@@ -79,16 +79,16 @@ body {
 
 /*Rooms*/
 
-#rooms ul {
+#rooms {
 	border-left: 1px solid silver;
 	border-right: none;
 }
 
-#rooms ul li:nth-child(odd) {
+#rooms li:nth-child(odd) {
 	background-color: #fff;
 }
 
-#rooms ul li i {
+#rooms li i {
 	color: #1d89cf;
 }
 
