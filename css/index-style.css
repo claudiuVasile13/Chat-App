@@ -203,17 +203,18 @@ i{
 	padding: 10px;
 	word-wrap: break-word;
 	/*width: 90%;*/
-	color: #4c4c4c; 
+	color: #003133; 
 	/*height: auto;*/
 }
 
 #send-area{
 	/*width: 100%;*/
 	height: calc(100% - 90%);
-	background-image: url('../img/Andromeda.jpg');
-	background-position: center center;
-  	background-size: cover;
-  	background-repeat: no-repeat;
+	// background-image: url('../img/Andromeda.jpg');
+	// background-position: center center;
+  	// background-size: cover;
+  	// background-repeat: no-repeat;
+  	background-color: #003133;
 }
 
 #send-area textarea {
@@ -247,8 +248,9 @@ i{
 #send-button:hover{
 	/*background-color: #1d89cf;*/
 	color: #003133;
-	background-color: #fff;
+	background-color: #F0F0F0;
 	cursor: pointer;
+	border-left: none;
 	border-right: 1px solid silver;
 }
 
