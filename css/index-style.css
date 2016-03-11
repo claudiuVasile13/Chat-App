@@ -31,17 +31,21 @@ body {
 	border-radius: none;
 	border: none;
 	height: 60px;
-	color: #000;
+	color: #fff;
 	text-align: center;
 	font-family: FontAwesome;
 	/*background-color: #1d89cf;*/
 	border-bottom: 1px solid silver;
+	background-image: url('../img/Andromeda.jpg');
+	background-position: center center;
+  	background-size: cover;
+  	background-repeat: no-repeat;
 }
 
 /*the list of users*/
 #users, #rooms {
 	margin: 0;
-	height: 100%;
+	height: calc(100% - 60px);
 	list-style-type: none;
 	overflow-y: hidden;
 	border-right: 1px solid silver;
@@ -49,7 +53,7 @@ body {
 
 #users li, #rooms li {
 	padding: 10px;
-	color: black;
+	color: #003133;
 	font-family: Arial;
 	overflow-x: hidden;
 	white-space: nowrap;
@@ -82,7 +86,7 @@ body {
 }
 
 #rooms li i {
-	color: #1d89cf;
+	color: #003133;
 }
 
 /*Chat*/
@@ -167,29 +171,29 @@ i{
 	/*padding:10px 30px 0px 30px; */
 	height: 90%;
 	/*border:5px solid black;*/
-	overflow-y: auto;
+	overflow-y: hidden;
 	border-left: 1px solid silver;
 	border-right: 1px solid silver;
 }
 
-#chat-messages ul{
+#messages-list{
 	list-style-type: none;
 	/*border: 1px solid blue;*/
 	width: 100%;
 	padding: 10px 30px 0px 30px; 
 }
 
-#chat-messages ul li {
+#messages-list li {
 	/*border: 1px solid green;*/
 	width: 100%;
 }
 
-#chat-messages ul li img{
+#messages-list li img{
 	width: 40px;
 	border-radius: 5px;
 }
 
-#chat-messages ul li p{
+#messages-list li p{
 	background-color: #fff;
 	border-radius: 5px;
 	border: 1px solid silver;
@@ -203,29 +207,36 @@ i{
 	/*height: auto;*/
 }
 
-#chat-messages ul li i {
-}
-
 #send-area{
 	/*width: 100%;*/
 	height: calc(100% - 90%);
+	background-image: url('../img/Andromeda.jpg');
+	background-position: center center;
+  	background-size: cover;
+  	background-repeat: no-repeat;
 }
 
 #send-area textarea {
-	border: 1px solid silver;
-	border-right: none;
+	/*border: 1px solid silver;*/
+	/*border-right: none;*/
+	font-family: Verdana;
+	border: none;
 	resize: none;
+	padding: 10px;
 	height: 100%;
+	color: #fff;
+	background-color: transparent;
 }
 
 #send-button{
 	height: 100%;
 	text-align: center;
-	padding-top: 10px;
-	border:1px solid #1d89cf;
+	padding-top: 15px;
+	/*border:1px solid #1d89cf;*/
 	border-left:none;
-	background-color: #fff;
-	color: #1d89cf;
+	/*background-color: #fff;*/
+	color: #fff;
+	border-left: 1px solid #fff;
 }
 
 #send-button i{
@@ -234,9 +245,11 @@ i{
 }
 
 #send-button:hover{
-	background-color: #1d89cf;
-	color: #fff;
+	/*background-color: #1d89cf;*/
+	color: #003133;
+	background-color: #fff;
 	cursor: pointer;
+	border-right: 1px solid silver;
 }
 
 

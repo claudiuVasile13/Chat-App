@@ -15,4 +15,12 @@ $(document).ready(function() {
 			$('#rooms').css("overflow-y", "hidden");
 		}
 	);
+	$('#chat-messages').hover(
+		function() {
+			$('#chat-messages').css("overflow-y", "auto");
+		},
+		function() {
+			$('#chat-messages').css("overflow-y", "hidden");
+		}
+	);
 });
