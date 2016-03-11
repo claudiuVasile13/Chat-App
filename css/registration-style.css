@@ -54,7 +54,10 @@ form {
 	font-family: Verdana;
 	letter-spacing: 2px;
 	color: #fff;
-	background-color: #1d89cf;
+	background-image: url('../img/Andromeda.jpg');
+	background-position: center center;
+  	background-size: cover;
+  	background-repeat: no-repeat;
 	margin-bottom: 20px;
 }
 
