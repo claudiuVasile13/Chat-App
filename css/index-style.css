@@ -67,11 +67,11 @@ body {
 }
 
 #users li:nth-child(odd) i {
-	color: #FF4C4C;
+	color: #6B8E23;
 }
 
 #users li:nth-child(even) i {
-	color: #6B8E23;
+	color: #FF4C4C;
 }
 
 /*Rooms*/
