@@ -8,11 +8,11 @@ body {
 	margin: 0;
 	width: 100%;
 	height: 100%;
-	position: absolute;
+	/*position: absolute;*/
 }
 
 .row {
-	height: 100%;
+	height: 100vh;
 	margin: 0;
 }
 
@@ -70,13 +70,6 @@ body {
 	color: #6B8E23;
 }
 
-/*Chat*/
-#chat {
-	padding-left:10px;
-	padding-right:10px;
-	height: 100%;
-}
-
 /*Rooms*/
 
 #rooms {
@@ -92,10 +85,10 @@ body {
 	color: #1d89cf;
 }
 
-
 /*Chat*/
-
 #chat {
+	padding-left:10px;
+	padding-right:10px;
 	height: 100%;
 }
 
@@ -106,7 +99,10 @@ body {
 	padding-top: 10px;
 	text-align: center;
 	/*border: 1px solid red;*/
-	background-color: #1d89cf;
+	background-image: url('../img/Andromeda.jpg');
+	background-position: center center;
+  	background-size: cover;
+  	background-repeat: no-repeat;
 }
 /*Username design*/
 #username {
@@ -127,7 +123,7 @@ body {
 	float: right;
 	padding: 10px;
 	background-color: #fff;
-	color: #1d89cf;
+	color: #003133;
 	border: 1px solid #fff;
 }
 
@@ -147,7 +143,7 @@ i{
 
 /*Button on hover*/
 #button-profile:hover {
-	background-color: #1d89cf;
+	background-color: transparent;
 	border: 1px solid #fff; 
 	color: #fff;
 	cursor: pointer;
@@ -156,15 +152,14 @@ i{
 #button-logout:hover {
 	border: 1px solid #fff;
 	background-color: #fff;
-	color: #1d89cf;
+	color: #003133;
 	cursor: pointer;
 }
 
 /*Chat body design*/
 #chat-body{
 	width: 100%;
-	height: 90%;
-	/*border: 3px solid #1d89cf*/
+    height: calc(100% - 60px);
 	background-color: #F0F0F0;
 }
 
@@ -173,6 +168,8 @@ i{
 	height: 90%;
 	/*border:5px solid black;*/
 	overflow-y: auto;
+	border-left: 1px solid silver;
+	border-right: 1px solid silver;
 }
 
 #chat-messages ul{
@@ -211,11 +208,11 @@ i{
 
 #send-area{
 	/*width: 100%;*/
-	height: 10%;
+	height: calc(100% - 90%);
 }
 
 #send-area textarea {
-	border: 1px solid #1d89cf;
+	border: 1px solid silver;
 	border-right: none;
 	resize: none;
 	height: 100%;
