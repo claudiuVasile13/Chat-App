@@ -188,44 +188,53 @@ i{
 	width: 100%;
 }
 
-#messages-list li img{
-	width: 40px;
-	border-radius: 5px;
-}
-
-#messages-list li p{
+.message{
 	background-color: #fff;
 	border-radius: 5px;
-	border: 1px solid silver;
-	margin-top: 5px;
-	margin-left: 40px;
-	margin-right: 5px;
-	padding: 10px;
-	word-wrap: break-word;
-	/*width: 90%;*/
-	color: #003133; 
-	/*height: auto;*/
+	border: 1px solid #fff;
+	// padding: 10px;
+	// padding-bottom: 5px;
+	color: #003133;
+	margin-bottom: 15px;
 }
 
-#send-area{
-	/*width: 100%;*/
+.message-header {
+	// border: 1px solid blue;
+	margin-bottom: 15px;
+	background-color: #003133;
+	color: #fff;
+	padding: 7px;
+	text-align: center;
+	font-family: Roboto;
+}
+
+.message-header img{
+	width: 25px;
+	margin-right: 5px;
+	border-radius: 5px;
+}
+
+.message p {
+	// border: 1px solid red;
+	word-wrap: break-word;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+#send-area {
 	height: calc(100% - 90%);
-	// background-image: url('../img/Andromeda.jpg');
-	// background-position: center center;
-  	// background-size: cover;
-  	// background-repeat: no-repeat;
-  	background-color: #003133;
+  	background-color: #fff;
+  	border: 2px solid #003133;
 }
 
 #send-area textarea {
-	/*border: 1px solid silver;*/
-	/*border-right: none;*/
 	font-family: Verdana;
 	border: none;
 	resize: none;
 	padding: 10px;
 	height: 100%;
-	color: #fff;
+	color: #003133;
 	background-color: transparent;
 }
 
@@ -233,25 +242,18 @@ i{
 	height: 100%;
 	text-align: center;
 	padding-top: 15px;
-	/*border:1px solid #1d89cf;*/
-	border-left:none;
-	/*background-color: #fff;*/
-	color: #fff;
-	border-left: 1px solid #fff;
+	color: #003133;
+	border-left: 2px solid #003133;
 }
 
 #send-button i{
-	/*border: 1px solid green;*/
 	font-size: 30px;
 }
 
 #send-button:hover{
-	/*background-color: #1d89cf;*/
-	color: #003133;
-	background-color: #F0F0F0;
+	color: #fff;
+	background-color: #003133;
 	cursor: pointer;
-	border-left: none;
-	border-right: 1px solid silver;
 }
 
 
